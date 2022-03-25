@@ -13,6 +13,10 @@ In order to flash the Microbit:
 - then press Javascript tab
 - delete everything there
 - then right click there and paste.
+- then you can do changes as needed (optional)
+- then connect the Microbit to your PC/laptop
+- then press the Download button
+Another option is to just connect the Microbit to your PC/laptop, download the hex file and drag and drop it to the new Microbit drive.
 
 Pentru a încărca Microbit-ul:
 - descarcă fișierul txt
