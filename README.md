@@ -16,7 +16,7 @@ In order to flash the Microbit:
 - then you can do changes as needed (optional)
 - then connect the Microbit to your PC/laptop
 - then press the Download button from makecode.microbit.org
-Another option is to just connect the Microbit to your PC/laptop, download the hex file and drag and drop it to the new Microbit drive.
+<br>Another option is to just connect the Microbit to your PC/laptop, download the hex file and drag and drop it to the new Microbit drive.
 
 Pentru a încărca Microbit-ul:
 - descarcă fișierul txt
@@ -30,4 +30,4 @@ Pentru a încărca Microbit-ul:
 - apoi poți face modificări după cum crezi (opțional)
 - apoi conectează Microbit-ul la calculator/PC/laptop
 - apoi apasă pe butonul Download de la makecode.microbit.org
-Altă opțiune e doar să conectezi Microbit-ul la calculator/PC/laptop, să descarci fișierul hex, apoi să-l tragi/duci către noua partiție (noul drive) Microbit care tocmai apăruse.
+<br>Altă opțiune e doar să conectezi Microbit-ul la calculator/PC/laptop, să descarci fișierul hex, apoi să-l tragi/duci către noua partiție (noul drive) Microbit care tocmai apăruse.
