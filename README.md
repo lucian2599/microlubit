@@ -12,10 +12,10 @@ In order to flash the Microbit:
 - make new project (give any name)
 - then press Javascript tab
 - delete everything there
-- then right click there and paste.
+- then right click there and paste
 - then you can do changes as needed (optional)
 - then connect the Microbit to your PC/laptop
-- then press the Download button
+- then press the Download button from makecode.microbit.org
 Another option is to just connect the Microbit to your PC/laptop, download the hex file and drag and drop it to the new Microbit drive.
 
 Pentru a încărca Microbit-ul:
@@ -27,3 +27,7 @@ Pentru a încărca Microbit-ul:
 - apoi apasă tab-ul Javascript
 - șterge tot de acolo
 - apoi apasă acolo click dreapta și Paste (lipește)
+- apoi poți face modificări după cum crezi (opțional)
+- apoi conectează Microbit-ul la calculator/PC/laptop
+- apoi apasă pe butonul Download de la makecode.microbit.org
+Altă opțiune e doar să conectezi Microbit-ul la calculator/PC/laptop, să descarci fișierul hex, apoi să-l tragi/duci către noua partiție (noul drive) Microbit care tocmai apăruse.
