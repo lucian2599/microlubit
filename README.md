@@ -1,8 +1,8 @@
 # microlubit
 Code examples for Microbit
 
-<b>microbit2-lelevulpe.txt</b> - An example for Microbit V2, a compass with 8 arrows and with hysteresis (avoid arrow oscillations), while it plays a children Romanian song "Lele vulpe" (about a fox) when pressing left button.
-Un exemplu pentru Microbit V2, o busolă cu 8 săgeți și histeresă (pentru a evita oscilația săgeții), în timp ce cântă un cântec românesc pentru copii "Lele vulpe" la apăsarea butonului stâng.
+<b>microbit2-lelevulpe.txt</b> - An example for Microbit V2, a compass with 8 arrows and with hysteresis (avoid arrow oscillations), while it plays a children Romanian song "Lele vulpe" (about a fox) when pressing left button. It should work for Microbit 1 too, but for sound an external buzzer must be connected to pin 0 and GND.
+<br>Un exemplu pentru Microbit V2, o busolă cu 8 săgeți și histeresă (pentru a evita oscilația săgeții), în timp ce cântă un cântec românesc pentru copii "Lele vulpe" la apăsarea butonului stâng. Ar trebui să meargă și cu Microbit 1, dar pentru sunet un buzzer extern trebuie conectat la pinul 0 și GND.
 
 In order to flash the Microbit:
 - download the txt file
