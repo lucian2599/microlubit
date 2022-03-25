@@ -1,0 +1,152 @@
+input.onButtonPressed(Button.A, function () {
+    toggle += 1
+    basic.clearScreen()
+})
+input.onButtonPressed(Button.B, function () {
+    soundExpression.giggle.playUntilDone()
+    pins.servoWritePin(AnalogPin.P1, (toggle % 2 + 1) * 90)
+    basic.clearScreen()
+    led.plot(1, 0)
+})
+let compas_hyst = 0
+let toggle = 0
+basic.showIcon(IconNames.Happy)
+basic.forever(function () {
+    if (input.compassHeading() < 3 || input.compassHeading() < 10 && compas_hyst == 1) {
+        basic.showArrow(ArrowNames.North)
+        compas_hyst = 1
+    } else if (input.compassHeading() < 40) {
+        basic.clearScreen()
+        compas_hyst = 0
+        basic.showLeds(`
+            . # . . .
+            . # . # .
+            . # # . .
+            . . . . .
+            . . . # .
+            `)
+    } else if (input.compassHeading() < 48 || input.compassHeading() < 55 && compas_hyst == 1) {
+        basic.showArrow(ArrowNames.NorthWest)
+        compas_hyst = 1
+    } else if (input.compassHeading() < 85) {
+        basic.clearScreen()
+        compas_hyst = 0
+        basic.showLeds(`
+            . . . . .
+            # # # . .
+            . . # . .
+            . # . . #
+            . . . . .
+            `)
+    } else if (input.compassHeading() < 93 || input.compassHeading() < 100 && compas_hyst == 1) {
+        basic.showArrow(ArrowNames.West)
+        compas_hyst = 1
+    } else if (input.compassHeading() < 130) {
+        basic.clearScreen()
+        compas_hyst = 0
+        basic.showLeds(`
+            . . . . .
+            . # . . #
+            . . # . .
+            # # # . .
+            . . . . .
+            `)
+    } else if (input.compassHeading() < 138 || input.compassHeading() < 145 && compas_hyst == 1) {
+        basic.showArrow(ArrowNames.SouthWest)
+        compas_hyst = 1
+    } else if (input.compassHeading() < 175) {
+        basic.clearScreen()
+        compas_hyst = 0
+        basic.showLeds(`
+            . . . # .
+            . . . . .
+            . # # . .
+            . # . # .
+            . # . . .
+            `)
+    } else if (input.compassHeading() < 183 || input.compassHeading() < 190 && compas_hyst == 1) {
+        basic.showArrow(ArrowNames.South)
+        compas_hyst = 1
+    } else if (input.compassHeading() < 220) {
+        basic.clearScreen()
+        compas_hyst = 0
+        basic.showLeds(`
+            . # . . .
+            . . . . .
+            . . # # .
+            . # . # .
+            . . . # .
+            `)
+    } else if (input.compassHeading() < 228 || input.compassHeading() < 235 && compas_hyst == 1) {
+        basic.showArrow(ArrowNames.SouthEast)
+        compas_hyst = 1
+    } else if (input.compassHeading() < 265) {
+        basic.clearScreen()
+        compas_hyst = 0
+        basic.showLeds(`
+            . . . . .
+            # . . # .
+            . . # . .
+            . . # # #
+            . . . . .
+            `)
+    } else if (input.compassHeading() < 273 || input.compassHeading() < 280 && compas_hyst == 1) {
+        basic.showArrow(ArrowNames.East)
+        compas_hyst = 1
+    } else if (input.compassHeading() < 310) {
+        basic.clearScreen()
+        compas_hyst = 0
+        basic.showLeds(`
+            . . . . .
+            . . # # #
+            . . # . .
+            # . . # .
+            . . . . .
+            `)
+    } else if (input.compassHeading() < 318 || input.compassHeading() < 325 && compas_hyst == 1) {
+        basic.showArrow(ArrowNames.NorthEast)
+        compas_hyst = 1
+    } else if (input.compassHeading() < 355) {
+        basic.clearScreen()
+        compas_hyst = 0
+        basic.showLeds(`
+            . . . # .
+            . # . # .
+            . . # # .
+            . . . . .
+            . # . . .
+            `)
+    } else {
+        basic.showArrow(ArrowNames.North)
+    }
+})
+basic.forever(function () {
+    if (toggle % 2 == 1) {
+        music.playMelody("C - C - C - E - ", 240)
+        music.playMelody("G - G - G - G - ", 240)
+    }
+    if (toggle % 2 == 1) {
+        music.playMelody("A - F - C5 - A - ", 240)
+        music.playMelody("G G - - G G - - ", 240)
+    }
+    if (toggle % 2 == 1) {
+        music.playMelody("A - F - C5 - A - ", 240)
+        music.playMelody("G G - - G G - - ", 240)
+    }
+    if (toggle % 2 == 1) {
+        music.playMelody("A - F - F - F - ", 240)
+        music.playMelody("G - E - E - E - ", 240)
+    }
+    if (toggle % 2 == 1) {
+        music.playMelody("D - F - E - D - ", 240)
+        music.playMelody("C - E - G G - - ", 240)
+    }
+    if (toggle % 2 == 1) {
+        music.playMelody("A - F - F - F - ", 240)
+        music.playMelody("G - E - E - E - ", 240)
+    }
+    if (toggle % 2 == 1) {
+        music.playMelody("D - F - E - D - ", 240)
+        music.playMelody("C C - - C C - - ", 240)
+    }
+})
